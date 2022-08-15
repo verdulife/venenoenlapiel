@@ -14,11 +14,11 @@
 	</h1>
 
 	<div class="cta row acenter">
-		<button>PRÓXIMOS CONCIERTOS</button>
-		<a href="/" class="btn">CONTRATAR</a>
+		<a href="#events" class="btn">PRÓXIMOS CONCIERTOS</a>
+		<a href="/">CONTRATAR</a>
 	</div>
 
-	<a href="/" class="scroller col">&nbsp;</a>
+	<a href="#events" class="scroller col"><span class="col" /></a>
 
 	<div class="gradient row" />
 </section>
@@ -42,7 +42,7 @@
 		font-weight: bold;
 	}
 
-	button {
+	.btn {
 		background: rgba(#fff, 0.1);
 		backdrop-filter: blur(10px);
 		color: #fff;
@@ -52,7 +52,7 @@
 		padding: 16px 32px;
 	}
 
-	.btn {
+	a {
 		color: #fff;
 		font-family: var(--font-text);
 		font-size: 12px;
@@ -62,14 +62,19 @@
 
 	.scroller {
 		position: absolute;
-		bottom: 30px;
+		bottom: 0;
 		left: 0;
 		right: 0;
-		margin: 0 auto;
 		width: 2px;
-		height: 80px;
-		background: #fff;
+		margin: 0 auto;
 		animation: bounce 1500ms infinite;
+		padding: 30px;
+
+		span {
+			width: 2px;
+			height: 80px;
+			background: #fff;
+		}
 	}
 
 	.gradient {
