@@ -1,0 +1,98 @@
+<script>
+	import Video from '$lib/components/Video.svelte';
+</script>
+
+<section id="home" class="viewport col fcenter">
+	<Video />
+
+	<img src="/logo.svg" alt="Veneno en la piel" class="logo" />
+
+	<h1 class="title tcenter">
+		El mejor pop <strong>español</strong>
+		<br />
+		de los <strong>80</strong> y <strong>90’s</strong>
+	</h1>
+
+	<div class="cta row acenter">
+		<button>PRÓXIMOS CONCIERTOS</button>
+		<a href="/" class="btn">CONTRATAR</a>
+	</div>
+
+	<a href="/" class="scroller col">&nbsp;</a>
+
+	<div class="gradient row" />
+</section>
+
+<style lang="scss">
+	section {
+		background: #000;
+
+		* {
+			z-index: 1;
+		}
+	}
+
+	h1 {
+		color: #fff;
+		font-size: 4em;
+		margin-top: 20px;
+	}
+
+	strong {
+		font-weight: bold;
+	}
+
+	button {
+		background: rgba(#fff, 0.1);
+		backdrop-filter: blur(10px);
+		color: #fff;
+		font-family: var(--font-text);
+		font-size: 12px;
+		margin-top: 20px;
+		padding: 16px 32px;
+	}
+
+	.btn {
+		color: #fff;
+		font-family: var(--font-text);
+		font-size: 12px;
+		margin-top: 20px;
+		padding: 16px 32px;
+	}
+
+	.scroller {
+		position: absolute;
+		bottom: 30px;
+		left: 0;
+		right: 0;
+		margin: 0 auto;
+		width: 2px;
+		height: 80px;
+		background: #fff;
+		animation: bounce 1500ms infinite;
+	}
+
+	.gradient {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: linear-gradient(to top, #000 10%, rgba(0, 0, 0, 0) 100%);
+		z-index: 0;
+	}
+
+	@keyframes bounce {
+		0%,
+		50%,
+		100% {
+			transform: translateY(0);
+		}
+		10% {
+			transform: translateY(-5px);
+		}
+		15% {
+			transform: translateY(10px);
+		}
+	}
+</style>
