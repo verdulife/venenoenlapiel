@@ -50,18 +50,23 @@
 	}
 
 	h2 {
-		font-size: 40px;
+		font-size: 30px;
 		color: #fff;
 		font-family: var(--font-title);
 	}
 
 	.slider {
 		max-width: 1100px;
-		margin-top: 60px;
+		margin-top: 40px;
 	}
 
 	.slide {
 		margin-left: 20px;
+		
+		@media (max-width: 800px) {
+			margin-left: 0;
+			padding-left: 20px;
+		}
 	}
 
 	.controls {

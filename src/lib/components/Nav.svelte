@@ -43,14 +43,26 @@
 		* {
 			pointer-events: all;
 		}
+
+		@media (max-width: 800px) {
+			padding: 20px;
+		}
 	}
 
 	.logo {
 		width: 150px;
+
+		@media (max-width: 800px) {
+			margin: 0 auto;
+		}
 	}
 
 	ul {
 		gap: 60px;
+
+		@media (max-width: 800px) {
+			display: none;
+		}
 	}
 
 	a {
@@ -78,6 +90,10 @@
 
 		* {
 			pointer-events: all;
+		}
+
+		@media (max-width: 800px) {
+			padding: 20px;
 		}
 	}
 

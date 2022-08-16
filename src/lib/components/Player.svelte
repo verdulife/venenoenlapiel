@@ -12,10 +12,7 @@
 
 <style lang="scss">
 	.volume {
-		width: 50px;
-		height: 50px;
 		display: flex;
-		border-radius: 50%;
 		padding: 0;
     pointer-events: all;
 	}

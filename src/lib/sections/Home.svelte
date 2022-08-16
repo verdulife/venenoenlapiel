@@ -26,9 +26,16 @@
 <style lang="scss">
 	section {
 		background: #000;
+		padding: 20px;
 
 		* {
 			z-index: 1;
+		}
+	}
+
+	.logo {
+		@media (max-width: 800px) {
+			display: none;
 		}
 	}
 
@@ -36,6 +43,14 @@
 		color: #fff;
 		font-size: 4em;
 		margin-top: 20px;
+
+		@media (max-width: 800px) {
+			font-size: 3em;
+
+			br {
+				display: none;
+			}
+		}
 	}
 
 	strong {
